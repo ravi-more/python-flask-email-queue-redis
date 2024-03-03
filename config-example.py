@@ -1,0 +1,10 @@
+SECRET_KEY = ""
+MONGO_URI = ""
+MAIL_SERVER = ""
+MAIL_PORT = 587
+MAIL_USE_TLS = True
+MAIL_USERNAME = ""
+MAIL_PASSWORD = ""
+
+REDIS_URL = 'redis://127.0.0.1:6379/0'
+QUEUES = ['email-tasks']
