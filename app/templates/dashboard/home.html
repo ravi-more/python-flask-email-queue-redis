@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% from 'field-renderer.html' import render_field %}
+{% block main %}
+<div class="wrapper">
+	<div class="title">Send Email</div>
+	<form method="post">
+		<div class="form">
+			{{form.hidden_tag()}}
+			{{render_field(form.email)}}
+			{{render_field(form.subject)}}
+			{{render_field(form.body)}}
+			<div class="input-field">
+				{{form.submit(class='btn')}}
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock main %}
